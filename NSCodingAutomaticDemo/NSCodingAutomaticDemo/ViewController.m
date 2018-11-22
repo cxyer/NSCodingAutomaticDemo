@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "NSObject+Model.h"
 
 @interface ViewController ()
 
@@ -18,10 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Person *person = [[Person alloc] init];
-    person.name = @"cxy";
-    person.age = @"10";
-    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"%@", dict);
+    Person *person = [Person modelWithDict:dict];
+//    person.name = @"cxy";
+//    person.age = @"10";
+    NSLog(@"%@ %@",person.name,person.age);
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:person];
     Person *newPerson = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     NSLog(@"%@ %@",newPerson.name,newPerson.age);

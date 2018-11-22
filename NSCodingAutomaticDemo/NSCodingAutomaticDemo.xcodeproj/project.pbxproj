@@ -14,6 +14,8 @@
 		80D2DCBD217CCC9400C94906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D2DCBB217CCC9400C94906 /* LaunchScreen.storyboard */; };
 		80D2DCC0217CCC9400C94906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2DCBF217CCC9400C94906 /* main.m */; };
 		80D2DCC8217CCCA900C94906 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2DCC7217CCCA900C94906 /* Person.m */; };
+		80E94E3321A6E247001975AC /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80E94E3221A6E247001975AC /* data.plist */; };
+		80E94E3621A6E279001975AC /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E94E3521A6E279001975AC /* NSObject+Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		80D2DCBF217CCC9400C94906 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80D2DCC6217CCCA900C94906 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		80D2DCC7217CCCA900C94906 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		80E94E3221A6E247001975AC /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		80E94E3421A6E279001975AC /* NSObject+Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
+		80E94E3521A6E279001975AC /* NSObject+Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,9 @@
 				80D2DCB4217CCC9100C94906 /* ViewController.m */,
 				80D2DCC6217CCCA900C94906 /* Person.h */,
 				80D2DCC7217CCCA900C94906 /* Person.m */,
+				80E94E3421A6E279001975AC /* NSObject+Model.h */,
+				80E94E3521A6E279001975AC /* NSObject+Model.m */,
+				80E94E3221A6E247001975AC /* data.plist */,
 				80D2DCB6217CCC9100C94906 /* Main.storyboard */,
 				80D2DCB9217CCC9400C94906 /* Assets.xcassets */,
 				80D2DCBB217CCC9400C94906 /* LaunchScreen.storyboard */,
@@ -135,6 +143,7 @@
 			files = (
 				80D2DCBD217CCC9400C94906 /* LaunchScreen.storyboard in Resources */,
 				80D2DCBA217CCC9400C94906 /* Assets.xcassets in Resources */,
+				80E94E3321A6E247001975AC /* data.plist in Resources */,
 				80D2DCB8217CCC9100C94906 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +159,7 @@
 				80D2DCC0217CCC9400C94906 /* main.m in Sources */,
 				80D2DCC8217CCCA900C94906 /* Person.m in Sources */,
 				80D2DCB2217CCC9100C94906 /* AppDelegate.m in Sources */,
+				80E94E3621A6E279001975AC /* NSObject+Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
